@@ -10,10 +10,86 @@
     <link rel="stylesheet" href="/css/styles.css">
 <!-- End of CSS Linked -->
     <title>The Overwatch Academy</title>
-</head>
-<body>
+</head>  
+<body class="homebackgroundimage">
+    <nav class="navbar navbar-inverse navbar-sticky">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="logo" src="https://files.slack.com/files-pri/T039Z04V3-FT8H4P5FA/overwatch_logo.png">
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="projects.html">Umbrella Projects</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="helpful.html">Helpful</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+ <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/Home Header.jpg" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  <div class="container" style="background-color:#e8f3ea">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";}
+}
+</script>
+        </nav>
 
 
+    <main>
+    <div>
+        <h1 class="top">Overwatch Academy</h1>
+    </div>
+    <div class="pose">
+    <div class="column">
+        <h2>Mission Statement</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos illum suscipit ipsam quasi ex error natus vero deleniti commodi voluptates nobis culpa illo aliquid sapiente eaque repellat sit facere fugiat nam quibusdam tenetur. Ullam maiores nisi eius est cumque iure voluptas! In veritatis quis, consectetur mollitia nostrum voluptate illum tempora perferendis, itaque consequuntur excepturi minima obcaecati, aspernatur perspiciatis illo repudiandae? Nam animi temporibus, error facilis laudantium voluptate quia voluptatem quasi mollitia necessitatibus, inventore ex.</p>
+    </div>
+    <div class="column">
+        <h2>Vision Statement</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum iusto officiis voluptatibus fuga qui, consectetur eaque illo provident consequuntur ducimus totam obcaecati sapiente inventore repellendus itaque, odio accusamus pariatur ipsa saepe at nam tempore. Iure tempore blanditiis, quod illum animi quis reprehenderit? Impedit at, inventore eum veniam sapiente debitis accusantium sequi repudiandae illum dolorem porro magni consectetur voluptatem, itaque praesentium id asperiores facere quidem reprehenderit nesciunt hic reiciendis in laudantium. Minima animi sint delectus error.</p>
+    </div></div>
+</main>
+
+<footer>
+    <div class="nextto">
+        <h4>BitWise Hours</h4>
+            <p>Monday - Saturday <br>9am to 5pm</p>
+    </div>
+    <div class="nextto">
+        <h4>BitWise Location</h4>
+            <p>700 Van Ness Ave. <br>Fresno, Ca. 93728</p>
+    </div>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.603340567745!2d-119.78799278471205!3d36.73208657996256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4f58091%3A0xf082a7e633ee41f0!2s700%20Van%20Ness%20Ave%2C%20Fresno%2C%20CA%2093721!5e0!3m2!1sen!2sus!4v1574390307993!5m2!1sen!2sus" width="350" height="220" frameborder="2" style="border:0;" allowfullscreen=""></iframe>
+
+</footer>
 
 
 
@@ -34,5 +110,7 @@
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/script.js"></script>
 <!-- End of JS Linked -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>
