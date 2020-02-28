@@ -7,77 +7,127 @@
 <!-- Start of CSS Linked-->
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles-course.css">
 <!-- End of CSS Linked -->
     <title>Course Curriculum</title>
 </head>
 <body class=backgroundimage>
-    <nav>
+    <nav class="navbar navbar-inverse navbar-sticky">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="logo" src="/img/Overwatch Logo.png">
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="projects.html">Umbrella Projects</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="helpful.html">Helpful</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
     </nav>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <button class="accordion">Day 1 Training</button>
-    <div class="panel">
-            <div _ngcontent-c2="" class="row">
-                <h1 _ngcontent-c2="" class="col-md-12 text-center hdr">Day 1</h1>
+
+    <!-- Back to Top Button Information -->
+    <Div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+    </Div>
+    <!-- End of back to top Button inforamtion -->
+
+    <!-- Start of the Accordion function -->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Collapsible Group Item #1
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
             </div>
-            <week-1 _ngcontent-c2="" _nghost-c3="" ><div _ngcontent-c3="">
-                    <day-1 _ngcontent-c3="" _nghost-c9=""><div _ngcontent-c9="" class="row">
-                    <h2 _ngcontent-c9="" class="col-md-3 try">Concepts</h2>
-                    <div _ngcontent-c9="" class="col-md-9">
-                      <ul _ngcontent-c9="" class="point">
-                        <li _ngcontent-c9="" class="link"> Setup</li>
-                        <li _ngcontent-c9="" class="link"> Introductions</li>
-                        <li _ngcontent-c9="" class="link"> Icebreaker</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div _ngcontent-c9="" class="row" id="setup">
-                    <h2 _ngcontent-c9="" class="col-md-3 try">Setup</h2>
-                    <div _ngcontent-c9="" class="col-md-9">
-                      <ul _ngcontent-c9="" class="point">
-                        <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://slack.com/" target="_blank">Slack</a></li>
-                        <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://git-scm.com/download" target="_blank">Git</a></li>
-                        <img _ngcontent-c9="" alt="Git Option" src="/img/git-option.png" style="width:400px; height:300px">
-                        <li _ngcontent-c9="">**Make sure you check this option</li>
-                        <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
-                        <li _ngcontent-c9="">Packages to add to VSC:</li>
-                        <ul _ngcontent-c9="" style="margin-left: 50px; list-style-type: circle;">
-                          <li _ngcontent-c9="">Open in Browser</li>
-                          <li _ngcontent-c9="">Auto Rename Tag</li>
-                          <li _ngcontent-c9="">Bracket pair colorizer</li>
-                          <li _ngcontent-c9="">Live Server</li>
-                        </ul>
-                        <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://github.com" target="_blank">Github</a></li>
-                        <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank">SSH keys</a></li>
-                        <li _ngcontent-c9="">**Windows if you're having trouble with the last step, try:<br _ngcontent-c9=""><code _ngcontent-c9="">cat ~/.ssh/id_rsa.pub | clip</code></li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div _ngcontent-c9="" class="row" id="intro">
-                    <h2 _ngcontent-c9="" class="col-md-3 try">Introductions</h2>
-                    <div _ngcontent-c9="" class="col-md-9">
-                      <ul _ngcontent-c9="" class="point">
-                        <li _ngcontent-c9="">Who am I?</li>
-                        <li _ngcontent-c9="">Who are you?</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  <div _ngcontent-c9="" class="row" id="icebreaker">
-                    <h2 _ngcontent-c9="" class="col-md-3 try">Icebreaker</h2>
-                    <div _ngcontent-c9="" class="col-md-9">
-                      <ul _ngcontent-c9="" class="point">
-                        <li _ngcontent-c9="">Give yourself a point</li>
-                        <li _ngcontent-c9="">Free association</li>
-                      </ul>
-                    </div>
-                  </div>
-                  
-                  </day-1>
-                    
-                  </div></week-1>
-    </div>
+          </div>
+        </div>
+    <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Day 1 Training
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <button class="accordion">Day 1 Training</button>
+                <div class="panel">
+                        <div _ngcontent-c2="" class="row">
+                            <h1 _ngcontent-c2="" class="col-md-12 text-center hdr">Day 1</h1>
+                        </div>
+                        <week-1 _ngcontent-c2="" _nghost-c3="" ><div _ngcontent-c3="">
+                                <day-1 _ngcontent-c3="" _nghost-c9=""><div _ngcontent-c9="" class="row">
+                                <h2 _ngcontent-c9="" class="col-md-3 try">Concepts</h2>
+                                <div _ngcontent-c9="" class="col-md-9">
+                                  <ul _ngcontent-c9="" class="point">
+                                    <li _ngcontent-c9="" class="link"> Setup</li>
+                                    <li _ngcontent-c9="" class="link"> Introductions</li>
+                                    <li _ngcontent-c9="" class="link"> Icebreaker</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div _ngcontent-c9="" class="row" id="setup">
+                                <h2 _ngcontent-c9="" class="col-md-3 try">Setup</h2>
+                                <div _ngcontent-c9="" class="col-md-9">
+                                  <ul _ngcontent-c9="" class="point">
+                                    <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://slack.com/" target="_blank">Slack</a></li>
+                                    <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://git-scm.com/download" target="_blank">Git</a></li>
+                                    <img _ngcontent-c9="" alt="Git Option" src="/img/git-option.png" style="width:400px; height:300px">
+                                    <li _ngcontent-c9="">**Make sure you check this option</li>
+                                    <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a></li>
+                                    <li _ngcontent-c9="">Packages to add to VSC:</li>
+                                    <ul _ngcontent-c9="" style="margin-left: 50px; list-style-type: circle;">
+                                      <li _ngcontent-c9="">Open in Browser</li>
+                                      <li _ngcontent-c9="">Auto Rename Tag</li>
+                                      <li _ngcontent-c9="">Bracket pair colorizer</li>
+                                      <li _ngcontent-c9="">Live Server</li>
+                                    </ul>
+                                    <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://github.com" target="_blank">Github</a></li>
+                                    <li _ngcontent-c9=""><a _ngcontent-c9="" href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank">SSH keys</a></li>
+                                    <li _ngcontent-c9="">**Windows if you're having trouble with the last step, try:<br _ngcontent-c9=""><code _ngcontent-c9="">cat ~/.ssh/id_rsa.pub | clip</code></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              
+                              <div _ngcontent-c9="" class="row" id="intro">
+                                <h2 _ngcontent-c9="" class="col-md-3 try">Introductions</h2>
+                                <div _ngcontent-c9="" class="col-md-9">
+                                  <ul _ngcontent-c9="" class="point">
+                                    <li _ngcontent-c9="">Who am I?</li>
+                                    <li _ngcontent-c9="">Who are you?</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              
+                              <div _ngcontent-c9="" class="row" id="icebreaker">
+                                <h2 _ngcontent-c9="" class="col-md-3 try">Icebreaker</h2>
+                                <div _ngcontent-c9="" class="col-md-9">
+                                  <ul _ngcontent-c9="" class="point">
+                                    <li _ngcontent-c9="">Give yourself a point</li>
+                                    <li _ngcontent-c9="">Free association</li>
+                                  </ul>
+                                </div>
+                              </div>
+                              
+                              </day-1>
+                                
+                        </div></week-1>
+                </div>
+            </div>
+          </div>
+        </div>
+    
     <button class="accordion">Day 2 Training</button>
     <div class="panel">
             <div _ngcontent-c2="" class="row">
@@ -775,7 +825,7 @@
 <!-- Start of JS Linked -->
 <script src="/js/bootstrap.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script src="/js/script.js"></script>
+<script src="/js/script-courses.js"></script>
 <!-- End of JS Linked -->
 </body>
 </html>
