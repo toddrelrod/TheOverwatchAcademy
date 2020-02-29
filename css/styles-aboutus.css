@@ -1,0 +1,101 @@
+nav{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #2a623d;
+    z-index: 4;
+}
+a{
+    margin-top: 20px;
+    margin-right: 25px ;
+}
+
+.logo{
+    margin-right: 50px;
+}
+.backgroundimage{
+    background-image: url(/img/AboutUsBG.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+/* Jumbotron Information Below */
+.jumbo{
+    color: whitesmoke;
+    text-shadow: 2px 5px 3px black;
+    text-decoration-style: solid;
+    font-size:100px ; 
+    padding-left: 150px;
+}
+.miniJumbo{
+    color: white;
+    text-shadow: 2px 5px 3px black;
+    text-decoration-style: solid;
+    font-size:30px ; 
+    padding-left: 40px; 
+}
+
+.jumbotron-add{
+    padding: 200px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color:  #2a623d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #9CCE6F;
+  }
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #638f9b;
+    padding: 10px;
+    padding-right:100px;
+    border-radius: 20px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
