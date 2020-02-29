@@ -1,11 +1,24 @@
+nav{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #2a623d;
+}
+a{
+    margin-top: 20px;
+    margin-right: 25px ;
+}
+.logo
+{
+    margin-right: 50px;
+}
 .backgroundimage{
     background-image: url(/img/AboutUsBG.jpg);
     background-size: contain;
 }
-.logo{
-    height: 10vh;
-    width: 15vw;
-}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -20,8 +33,45 @@
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    z-index: 4;
   }
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
+
+  /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #638F9B;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 35%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 1.0s;
+    border-radius: 150px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black ;
+    margin-left: 150px;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 4;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color:#60813b;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  border: none;
+  transition: max-height 0.9s ease-out;
+ }
