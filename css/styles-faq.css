@@ -1,3 +1,23 @@
+nav{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #2a623d;
+}
+a{
+    margin-top: 20px;
+    margin-right: 25px ;
+}
+.logo
+{
+    margin-right: 50px;
+}
 .header{
+    color: #f6f4ea;
     text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #225207;
 }
