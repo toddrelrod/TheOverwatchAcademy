@@ -1,7 +1,48 @@
-.header{
-    text-align: center;
+nav{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #2a623d;
 }
-
+a{
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.logo
+{
+    margin-right: 50px;
+}
+.header{
+    color: #f6f4ea;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #225207;
+}
+  li {
+    float: center;
+  }
+  li a {
+    display: none;
+    color: #f6f4ea;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } 
+  li a:hover {
+    background-color: #225207;
+  }
+.logo{
+    height: 10vh;
+    width: 15vw;
+}
 .centerVideo{
     margin-left: 240px;
+}
+
+.testimonialbackgroundimage{
+  background-image: url(img/Testimonial\ BG.jpg);
+  background-size: cover;
 }

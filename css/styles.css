@@ -26,10 +26,12 @@ nav{
   font-weight: 900;
   text-shadow: 2px 2px 3px #225207;
 }
-
+a{
+  margin-top: 20px;
+  margin-right: 25px ;
+}
 .logo{
-    height: 10vh;
-    width: 15vw;
+    margin-right: 50px;
 }
 button{
     float: right;
