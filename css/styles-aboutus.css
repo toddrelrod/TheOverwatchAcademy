@@ -1,15 +1,24 @@
+.navDetails{
+    background-color: white;
+    color: black;
+}
+
 nav{
     position: sticky;
     top: 0;
     padding: 5px;
-    font-family: 'Playfair Display SC', serif;
-    font-weight: 900;
-    text-shadow: 2px 2px 3px #2a623d;
+    /* font-family: 'Playfair Display SC', serif; */
+    font-weight: 400;
+    font-size: 18px;
+    text-shadow: 2px 1px 1px black;
     z-index: 4;
 }
 a{
     margin-top: 20px;
-    margin-right: 25px ;
+    margin-right: 25px;
+}
+.ulSticky{
+    position: sticky;
 }
 
 .logo{
@@ -28,23 +37,55 @@ a{
     text-shadow: 2px 5px 3px black;
     text-decoration-style: solid;
     font-size:100px ; 
-    padding-left: 150px;
+    padding-left: 50px;
 }
 .miniJumbo{
     color: white;
     text-shadow: 2px 5px 3px black;
     text-decoration-style: solid;
-    font-size:30px ; 
-    padding-left: 40px; 
+    font-size: 32px ; 
+    padding-left: 10%; 
+    padding-right:10%;
+    padding-bottom: 200px;
+}
+/* .jumbotron-add{
+    padding: 2%;
+} */
+
+.contactUsButton {
+    background-color: #17a9bd;
+    border: none;
+    margin-left: 12%;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-shadow: 2px 5px 3px black;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 18px;
 }
 
-.jumbotron-add{
-    padding: 200px;
+/* Info Area Styles */
+.infoArea{
+    display: inline-flex;
 }
 
-* {
-    box-sizing: border-box;
-  }
+.thumbnailLeft{
+    background-color: #60813B;
+    padding: 2%;
+}
+
+.thumbnailCenter{
+    background-color: #9CBE6F;
+    padding: 2%;
+}
+
+.thumbnailRight{
+    background-color: #17a9bd;
+    padding:2%;
+}
+
+*
   
   /* Style inputs */
   input[type=text], select, textarea {
