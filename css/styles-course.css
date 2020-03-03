@@ -49,6 +49,26 @@ a{
     background-color: #555; /* Add a dark-grey background on hover */
   }
 
+  /* Jumbotron Information Below */
+.jumbo{
+  color: white;
+  text-shadow: 2px 5px 3px black;
+  text-decoration-style: solid;
+  font-size:100px ; 
+  padding-left: 50px;
+}
+
+.miniJumbo{
+  color: white;
+  text-shadow: 2px 5px 3px black;
+  text-decoration-style: solid;
+  font-size: 32px ; 
+  padding-left: 10%; 
+  padding-right:10%;
+  padding-bottom: 100px;
+}
+/* End of jumbotron */
+
   /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #638F9B;

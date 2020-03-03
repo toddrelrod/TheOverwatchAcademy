@@ -1,15 +1,33 @@
 .calendarBackgroundImage{
     background-image: url(/img/Home\ BG.jpg);
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
-nav{
+/* nav{
     position: sticky;
     top: 0;
     padding: 5px;
     font-family: 'Playfair Display SC', serif;
     font-weight: 900;
     text-shadow: 2px 2px 3px #2a623d;
+} */
+.navbar{
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 900;
+  text-shadow: 2px 2px 3px #2a623d;
+  z-index: 3;
+  /* background-color: black; */
+  color: white;
+  padding: 20px 10px;
+  transition: 3.0s;
+  overflow: hidden;
 }
+
   li {
     float: center;
   }
@@ -37,13 +55,43 @@ a{
 .logo{
     margin-right: 50px;
 }
-h1{
-    text-align: center;
-    color:  white
-}
-.calendar{
-    margin-left:150px;
-    margin-top: 20px;
-    border-radius: 20px;
+
+/* Jumbotron Information Below */
+.jumbo{
+  color: white;
+  text-shadow: 2px 5px 3px black;
+  text-decoration-style: solid;
+  font-size:100px ; 
+  padding-left: 50px;
 }
 
+.miniJumbo{
+  color: white;
+  text-shadow: 2px 5px 3px black;
+  text-decoration-style: solid;
+  font-size: 32px ; 
+  padding-left: 10%; 
+  padding-right:10%;
+  padding-bottom: 100px;
+}
+
+.calendar{
+    margin-left:150px;
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.address{
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer{
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
