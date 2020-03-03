@@ -39,7 +39,15 @@ a{
     width: 15vw;
 }
 .centerVideo{
-    margin-left: 240px;
+   display:flex;
+   flex-direction: column;
+   margin-left: 420px;
+}
+
+@media screen and (max-width: 600px) {
+  .centerVideo {
+      margin-left:0px ; 
+  }
 }
 
 .testimonialbackgroundimage{
