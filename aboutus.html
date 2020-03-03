@@ -8,35 +8,39 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles-aboutus.css">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 <!-- End of CSS Linked -->
     <title>About Us</title>
 </head>
 <body>
-        <body class=backgroundimage>
+        <div class=backgroundimage>
             <!-- Navigation Board Begins -->
                 <!-- Brand/logo -->
-                <div>
-                <nav class="navbar navbar-inverse navbar-sticky navDetails">
+                <nav class="navbar" id="myIcon">
                     <div class="container-fluid">
-                        <div class="navbar-header">
-                            <img class="logo" src="https://files.slack.com/files-pri/T039Z04V3-FT8H4P5FA/overwatch_logo.png">
-                        </div>
+                        <div class="navbar-header" id="myIcon">
                         <!-- End of Brand/logo -->
-                            <ul class="nav navbar-nav ulSticky">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="course.html">Course</a></li>
-                                <li><a href="aboutus.html">About Us</a></li>
-                                <li><a href="projects.html">Umbrella Projects</a></li>
-                                <li><a href="testimonials.html">Testimonials</a></li>
-                                <li><a href="helpful.html">Helpful</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="calendar.html">Calendar</a></li>
+                            <ul class="nav navbar-nav">
+                                <li><img class="logo" src="https://files.slack.com/files-pri/T039Z04V3-FT8H4P5FA/overwatch_logo.png"> </li>
+                                <li><a id=hover href="index.html">Home</a></li>
+                                <li><a id=hover href="course.html">Course</a></li>
+                                <li><a id=hover href="aboutus.html">About Us</a></li>
+                                <li><a id=hover href="testimonials.html">Testimonials</a></li>
+                                <li><a id=hover href="helpful.html">Helpful</a></li>
+                                <li><a id=hover href="faq.html">FAQ</a></li>
+                                <li><a id=hover href="calendar.html">Calendar</a></li>
                             </ul>
+                            <!-- Fa Fa-Bars -->
+                            <a><button type="button" class="btn btn-default icon" aria-label="Left Align" id="myIcon"><span class="iconify" data-icon="fa-bars" data-inline="false"></span></button></a>
                         </div>
                 </nav>
-            </div>
                 <!-- End of Navigation Board -->
             <main>
+                <!-- Back to top button start -->
+                    <div>
+                        <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="iconify" data-icon="bytesize:arrow-top" data-inline="false"></span></button>
+                    </div>
+                <!-- Back to top button Finish -->
                 <!-- Start of Jumbotron -->
                         <div class="jumbotron-add">
                           <h1 class=jumbo>
@@ -44,70 +48,94 @@
                               <br>BOOTCAMP
                               <br>FOR VETERANS
                           </h1>
-                          <button type="button" class="contactUsButton">CONTACT US</button>
+                          <!-- Contact Us Button Below -->
+                          <button onclick="document.getElementById('id01').style.display='block'" id=buttonHover type="button" class="contactUsButton">CONTACT US</button>
+                          <!-- Button to open the modal -->
+                                <!-- The Modal (contains the Sign Up form) -->
+                                <div id="id01" class="modal">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>
+                                <form class="modal-content" action="/action_page.php">
+                                 <div class="container">
+                                <h1>CONTACT US</h1>
+                                <p>Please fill in this form to let us know what is on your mind</p>
+                                <hr>
+                                <label for="name"><b>Name</b></label>
+                                <input type="text" placeholder="Enter Full Name" name="name" required>
+
+                                <label for="email"><b>Email</b></label>
+                                 <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="phone"><b>Phone Number</b></label>
+                                <input type="phone" placeholder="Phone Number" name="phone" required>
+
+                                <label for="content"><b>Message</b></label>
+                                <textarea name="message" rows="10" cols="30">Enter Message Here</textarea>
+
+                                <label>
+
+                                <p>By writing to us you have ageed to our <a href="#" style="color:#17a9bd">Terms & Privacy.</a></p>
+
+                                <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn buttonContactUs">Cancel</button>
+                                <button class="signupbtn buttonContactUs" type="submit" class="signup">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                          <!-- Contact Us Button Complete -->
                           <p class=miniJumbo>We help veteran transition into the civilian workforce by proving technology training in a 14 week course where students are immersed in learning JavaScript, HTML, and CSS. 
                           </p>
                         </div>
                 <!-- Finish of jumbotron -->
+
                 <!-- Start of Informational Area -->
-               <div class="infoArea container-fluid">
+               <div class="infoArea container-fluid thumbnailAll">
                     <div class="row">
                         <div class="col-sm-6 col-md-4 thumbnailLeft">
                           <div>
                             <div class="caption">
-                              <h3>Thumbnail label</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem facilis, sunt inventore saepe molestias ducimus veritatis expedita quod dicta quis iste cum dignissimos eligendi? Maiores quidem officia nisi soluta, cum magnam ea rerum accusantium adipisci reprehenderit? Magni libero totam facilis qui dolorem, itaque aut nulla amet delectus eos eveniet animi sequi iusto voluptatum error quis veritatis! Saepe earum recusandae fugit laboriosam magni enim pariatur eius, architecto est maiores modi tempore eaque voluptatem, asperiores temporibus quisquam laborum repudiandae magnam possimus non dolorum veritatis deserunt, commodi aliquid? Perspiciatis corporis culpa doloribus itaque eveniet ducimus beatae eum explicabo! Eos magni cum ducimus eaque?    </p>
-                              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                              <h3 class=thumbnailH3>SUPPORT VETERAN EDUCATION</h3>
+                                <p>Don’t want to take a class, but want to support our veterans-focused education programs? Learn more about donation options.   </p>
+                              <p><a href="index.html" class="thumbnailButton" id="thumbnailButtonHover" role="button">DONATE</a> </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-4 thumbnailCenter">
                         <div>
                             <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem facilis, sunt inventore saepe molestias ducimus veritatis expedita quod dicta quis iste cum dignissimos eligendi? Maiores quidem officia nisi soluta, cum magnam ea rerum accusantium adipisci reprehenderit? Magni libero totam facilis qui dolorem, itaque aut nulla amet delectus eos eveniet animi sequi iusto voluptatum error quis veritatis! Saepe earum recusandae fugit laboriosam magni enim pariatur eius, architecto est maiores modi tempore eaque voluptatem, asperiores temporibus quisquam laborum repudiandae magnam possimus non dolorum veritatis deserunt, commodi aliquid? Perspiciatis corporis culpa doloribus itaque eveniet ducimus beatae eum explicabo! Eos magni cum ducimus eaque?</p>
-                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                <h3 class=thumbnailH3>GEEKWISE OVERWATCH COURSES</h3>
+                                    <p>Geekwise Academy courses are super-fast-paced and specifically designed to ensure that you’re learning what we’re teaching. Each course begins with a crash course in “How to Geekwise,” which will give you strategies for getting every ounce of benefit you can out of your Geekwise Academy experience. Geekwise Academy Courses deploy a social learning process that is intended to provide you with workplace communication training to go alongside the technology skill you signed up for. Courses include regular assessments to evaluate your progress and to make sure no one gets left behind. You’ll build industry standard projects in each course that will stretch and improve your skills. Add your projects to your body of work and use them to showcase your abilities in future job interviews..</p>
+                                    <p><a href="index.html" class="thumbnailButton" id="thumbnailButtonHover" role="button">LEARN MORE</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4 thumbnailRight">
                             <div>
                             <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo, amet similique totam, deleniti nulla libero ex est harum ipsam quos. Commodi quia at excepturi quae dolorem tenetur. Sequi ipsam officiis in odit non blanditiis tempora, quos, rerum omnis consectetur, nulla nesciunt eveniet! Beatae quam in doloremque quidem ad cum harum autem, nihil perferendis quasi explicabo placeat architecto distinctio officia adipisci assumenda molestiae ea, facere incidunt optio corrupti ex? Magnam aspernatur sit, soluta eius quo eaque quasi, maiores libero nam voluptates nostrum earum quidem minima suscipit, iste ipsum facilis repellat! Officia accusamus distinctio pariatur quis atque reiciendis numquam porro repellat.</p>
-                                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                <h3 class=thumbnailH3>COHORTS AND BEYOND</h3>
+                                  <p>The Geekwise Academy Cohort program bridges the gap between Geekwise Academy learning technology and working in the technology industry. All Geekwise Academy students are eligible, but only those who have completed classes will be accepted.</p>
+                                  <p>The Cohort consists of two phases. The first is a tryout where our Developer Fellows take students through a crash course in a some industry specific technologies. Prospective cohort members get a taste of a few languages and frameworks before being asked to build something and interview for a spot in one of our cohorts. Phase two is entry into a cohort and will allow individuals to work on real projects for real cash. All the while, cohort members will learn and work under the tutelage of a seasoned developer.</p>
+                                </div>
+                                  <p><a href="index.html" class="thumbnailButtonRight" id="thumbnailButtonRightHover" role="button">LEARN MORE</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div id="map"></div>
             </div>
-            <!-- End of Information Section -->
-            <div class="container">
-                    <div style="text-align:center">
-                      <h2>Contact Us</h2>
-                      <p>Should you have any questions, issues, or concerns please leave us a message:</p>
-                    </div>
-                    <div class="row">
-                      <div class="column">
-                        <form action="/action_page.php">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name...">
-                            <label for="lname">Last Name</label>
-                            <br><input type="text" id="lname" name="lastname" placeholder="Your last name...">
-                            <br><label for="email">Enter your email:</label>
-                            <br><input type="email" id="email" name="email" placeholder="Your Email Address...">
-                            <br><br><label for="phone">Enter your phone number:</label>
-                            <br><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Your Phone Number...">
-                            <br><br><label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:170px"></textarea>
-                            <input type="submit" value="Submit">
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </main>
-    
-
+            <div class="col-sm-6 col-md-6 address">
+                <h4>BitWise Hours</h4>
+                    <p>Monday - Saturday <br>9am to 5pm</p>
+            </div>
+            <div class="col-sm-6 col-md-6 address">
+                <h4>BitWise Location</h4>
+                    <p>700 Van Ness Ave. <br>Fresno, Ca. 93728</p>
+            </div> 
+    </main>
+    <footer>
+        <img src="/img/Bitwise-logo-copyright.png" alt="Bitwise Industry logo">
+        <p>Privacy Policy</p>
+    </footer>
 
 
 
@@ -115,7 +143,10 @@
     <!-- Start of JS Linked -->
     <script src="/js/bootstrap.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/script-aboutus.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8KogKJmhKF--pPsAj69-qbl2zjj_8KN8&callback=initMap">
+    </script>
     <!-- End of JS Linked -->
 </body>
 </html>
